@@ -33,7 +33,7 @@ object QuickstartServer extends App with UserRoutes {
 
   serverBinding.onComplete {
     case Success(bound) =>
-      println(s"lokesh is online at http://${bound.localAddress.getHostString}:${bound.localAddress.getPort}/")
+      println(s"lokesh is -- online at http://${bound.localAddress.getHostString}:${bound.localAddress.getPort}/")
       Thread.sleep(60000)
     //       system.terminate()
     case Failure(e) =>
